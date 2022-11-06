@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    /* position: absolute;
+    top: 50px; */
+    font-family:'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+} */
+
+.navbar ul {
+    display: flex;
+    background: lightcoral;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 10px 0 0;
+    padding: 10px;
+}
+
+.navbar ul li:hover {
+    background:rgb(216, 95, 95);
+    transition:all 0.3s;
+}
+
+.info {
+    display: flex;
+}
+
+@media (max-width: 700px){
+
+    body {
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #0f141e;
+        /* background: red */
+    }
+.info {
+    display: block;
+    text-align: center;
+}
+
+/* .img {
+    width:50%;
+} */
+
+}
+
+img {
+    border-radius: 0 50px 0 50px;
+    width: 400px;
+    margin: 10px 10px 10px 0px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid rgb(210, 112, 255);
+    border-radius: 20px;
+    padding-left:20px;
+}
+
+article {
+    border: 1px solid rgb(210, 112, 255);
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    padding-left:20px;
+}
+
+.table {
+    width: 80%;
+    border:solid 1px black;
+    text-align: center;
+    margin: 0px;
+    border-collapse: collapse;
+}
+
+.table tr, .table th, .table td {
+    border:solid 1px black;
+    text-align: center;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.table td:hover {
+    background: rgb(248, 248, 231);
+}
+
+.table1 tr:nth-child(odd){
+    background: rgb(211, 210, 210);
+}
+
+form {
+    border: 1px solid rgb(210, 112, 255);
+    margin: 10px 10px 100px 10px;
+    border-radius: 20px;
+    padding-left:20px;
+}
+
+h1, h2 {
+    color:rgb(34, 70, 228);
+    margin: 10px 10px 10px 10px;
+}
+
+/* #text, #email, #textarea, #submit {
+   
+    margin: 5px 10px;
+} */
+
+.bg-pink {
+    background-color: rgb(252, 222, 222);
+}
+
+.bg-blue {
+    background-color:rgb(213, 238, 238);
+}
+
+.bg-orange {
+    background-color: rgb(240, 230, 215);
+}
+
+.btn {
+    font-family:'Raleway', sans-serif;
+    background: black;
+    border:none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background:grey;
+    transition:all 0.5s;
+}
+
+.btn:active {
+    color: red;
+}
+
+.btn:visited {
+    color:blue;
+}
+
+a {
+    /* color:grey; */
+    text-decoration:none;
+    font-weight:bold;
+    margin-left: 15px;
+}
+
+a:active {
+    color: red;
+}
+
+/* a:visited {
+    color:blue;
+} */
+
+/* a:hover {
+    background:lightgrey;
+    transition:all 0.5s;
+} */
+
+.list1 {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.list {
+    margin: 15px 0px 0px 25px;
+    padding:0;
+    /* list-style: none; */
+}
+
+.list li{
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.list li:last-child {
+    margin-bottom:30px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+.contacting {
+    display: flex;
+    /* align-items: stretch; */
+/* align-content:space-between */
+    /* width: auto; */
+    margin-bottom: 0px;
+}
+
+.contacting form-group {
+    /* display: inline; */
+    /* flex-basis:600px; */
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.contacting .form-group:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.form-group label {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form-group input, .form-group textarea 
+{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 15px 15px 0;
+    margin-bottom: 10px;
+    font-family: inherit;
+    color: black;
+}
+
+@media (max-width: 700px){
+    .contacting {
+        display: block;
+        /* margin-bottom: 0px; */
+    }
+    .contacting .form-group:last-child {
+        margin-right: 0;
+        margin-left: 0px; 
+    }
+}
